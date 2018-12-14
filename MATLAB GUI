@@ -22,7 +22,7 @@ function varargout = OH(varargin)
 
 % Edit the above text to modify the response to help OH
 
-% Last Modified by GUIDE v2.5 14-Dec-2018 17:40:25
+% Last Modified by GUIDE v2.5 14-Dec-2018 18:37:25
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -73,9 +73,9 @@ function varargout = OH_OutputFcn(hObject, eventdata, handles)
 varargout{1} = handles.output;
 
 
-% --- Executes on button press in pushbutton1.
-function pushbutton1_Callback(hObject, eventdata, handles)
-% hObject    handle to pushbutton1 (see GCBO)
+% --- Executes on button press in START.
+function START_Callback(hObject, eventdata, handles)
+% hObject    handle to START (see GCBO)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 imgFolder = fullfile('/Users/suphaveerkeeratireungrit/Documents/MATLAB/card');
@@ -85,4 +85,3 @@ for j = 1:10
     ii = randi([1 numOfImgs]);
     imshow(imread(imgs.Files{ii}))
 end
-
